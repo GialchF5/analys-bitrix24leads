@@ -1,0 +1,13 @@
+﻿{
+    "id":  "d4edvs9mathipnhpetif",
+    "folder_id":  "b1gnufc37haf3rrd9ion",
+    "created_at":  "2025-03-26T13:12:29.283Z",
+    "name":  "analys-bitrix24leads",
+    "description":  "Загружает данные о лидах в MySQL",
+    "labels":  {
+                   "author":  "gilach"
+               },
+    "http_invoke_url":  "https://functions.yandexcloud.net/d4edvs9mathipnhpetif",
+    "status":  "ACTIVE",
+    "folder_name":  "sl"
+}
