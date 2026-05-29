@@ -26,12 +26,43 @@
 
 Значения не хранятся в sanitized-экспорте. Реальные значения находятся только в raw/, эту папку нельзя коммитить в GitHub.
 
-- `Webhook`
+- `BITRIX_WEBHOOK` / `Webhook`
+- `MYSQL_HOST` / `mysql_host`
+- `MYSQL_PORT` / `mysql_port`
+- `MYSQL_USER` / `mysql_user`
+- `MYSQL_PASSWORD` / `mysql_password`
+- `MYSQL_DB` / `mysql_db`
+- `MYSQL_TABLE`
+- `MYSQL_SSL_CA` / `MYSQL_SSL_CA_PEM` / `ca_pem`
+- `MYSQL_SSL_CA_PATH`
+- `MYSQL_SSL_REJECT_UNAUTHORIZED`
+- `MYSQL_SSL`
+- `DATE_FROM` / `START_DATE`
+- `DATE_TO` / `END_DATE`
+- `DATE_FILTER_FIELD`
+- `MAX_RECORDS`
+- `BATCH_SIZE`
+- `API_DELAY_MS`
 
 Пример .env:
 
 ```dotenv
-Webhook=<set-value>
+BITRIX_WEBHOOK=<set-value>
+MYSQL_HOST=<set-value>
+MYSQL_PORT=3306
+MYSQL_USER=<set-value>
+MYSQL_PASSWORD=<set-value>
+MYSQL_DB=<set-value>
+MYSQL_TABLE=bitrix_leads
+MYSQL_SSL_CA=<set-value>
+MYSQL_SSL_CA_PATH=
+MYSQL_SSL_REJECT_UNAUTHORIZED=true
+DATE_FROM=2025-01-01T00:00:00+03:00
+DATE_TO=2025-01-10T23:59:59+03:00
+DATE_FILTER_FIELD=DATE_CREATE
+MAX_RECORDS=15000
+BATCH_SIZE=50
+API_DELAY_MS=1000
 ```
 
 ## Локальный запуск

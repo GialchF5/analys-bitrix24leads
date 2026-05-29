@@ -1,0 +1,13 @@
+{
+  "name": "analys-bitrix24leads",
+  "version": "1.0.0",
+  "description": "Yandex Cloud Function for loading Bitrix24 leads into MySQL",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "mysql2": "^3.6.0"
+  },
+  "scripts": {
+    "start": "node -e \"require('./index').handler({}, {}).then(console.log).catch((error) => { console.error(error); process.exit(1); })\""
+  }
+}
